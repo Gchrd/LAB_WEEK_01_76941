@@ -1,0 +1,42 @@
+<resources>
+    <style name="Theme.LAB_WEEK_01" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- primary: kita gunakan warna IG untuk toolbar / accent -->
+        <item name="colorPrimary">@color/ig_purple</item>
+        <item name="colorPrimaryVariant">@color/ig_blueviolet</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <item name="colorSecondary">@color/ig_pink</item>
+        <item name="colorOnSecondary">@color/colorOnPrimary</item>
+
+        <!-- status bar -->
+        <item name="android:statusBarColor">@color/ig_blueviolet</item>
+        <item name="android:navigationBarColor">@color/ig_purple</item>
+
+        <!-- untuk komponen Material -->
+        <item name="materialCardViewStyle">@style/Widget.MaterialComponents.CardView</item>
+    </style>
+
+    <!-- Tombol bergaya IG (solid putih dengan teks warna IG) -->
+    <style name="Widget.IGButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/ig_purple</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:insetLeft">12dp</item>
+        <item name="android:insetRight">12dp</item>
+    </style>
+
+    <!-- Jika mau tombol biru IG solid (alternatif) -->
+    <style name="Widget.IGButton.Solid" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/ig_purple</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- TextInputLayout: outline stroke saat focus ikut warna IG -->
+    <style name="Widget.IGTextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/ig_pink</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+    </style>
+
+</resources>
